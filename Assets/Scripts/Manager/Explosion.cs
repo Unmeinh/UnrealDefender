@@ -4,6 +4,13 @@ public class Explosion : MonoBehaviour
 {
     public LayerMask targetLayer;
     public Vector2 explosionCenter;
+    public AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = gameObject.GetComponent<AudioSource>();
+    }
+
     public void FireExplosion()
     {
         Destroy(gameObject);

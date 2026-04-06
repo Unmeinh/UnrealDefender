@@ -6,6 +6,7 @@ public class Slime : MonoBehaviour
     public GameObject explosion;
     public Transform explosionOrg;
     private Defender myDefender;
+    public AudioClip explosionSFX;
 
     private void Start()
     {
@@ -19,6 +20,8 @@ public class Slime : MonoBehaviour
         Destroy(gameObject);
         GameObject explosionObject = Instantiate(explosion, explosionOrg.position, Quaternion.identity);
         explosionObject.GetComponent<Explosion>().explosionCenter = transform.position;
+        if (explosionObject.TryGetComponent<AudioSource>(out var audio)) 
+            audio.PlayOneShot(explosionSFX);
     }
 
     IEnumerator ScaleUp()

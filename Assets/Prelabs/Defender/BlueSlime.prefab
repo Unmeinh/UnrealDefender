@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   explosion: {fileID: 6342133802321501320, guid: e6bf1fb783e463340bd02724cdc265ca, type: 3}
   explosionOrg: {fileID: 7403999644202391576}
+  explosionSFX: {fileID: 8300000, guid: ac69e7674f1b05042aa513653ddae6a2, type: 3}
 --- !u!114 &7565996300136568494
 MonoBehaviour:
   m_ObjectHideFlags: 0

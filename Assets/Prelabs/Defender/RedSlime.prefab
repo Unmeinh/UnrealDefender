@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Slime
   explosion: {fileID: 1291821581836635431, guid: 9b3344a9c7221f249b4fe3770aea784e, type: 3}
   explosionOrg: {fileID: 7776377749596017795}
+  explosionSFX: {fileID: 8300000, guid: 40ebcc10f89182d4e87e1b7e1fd2176c, type: 3}
 --- !u!114 &5793730079336770315
 MonoBehaviour:
   m_ObjectHideFlags: 0
